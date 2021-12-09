@@ -6,8 +6,8 @@
 }
 
 body{
-    background-color: #14213d;
-    color: #fca311;
+    background-color: #055C9D;
+    color: #68BBE3;
     font-family: "Poppins",sans-serif;
     min-height: 100vh;
 }
@@ -28,18 +28,18 @@ form input ,form button {
     padding: 0.5rem;
     font-size: 1rem;
     border: none;
-    background:#fca311;
+    background:#0E86D4;
 }
 
 form button {
-    color: #e5e5e5;
-    background: #fca311;
+    color: #ffff;
+    background: #0E86D4;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 form button:hover{
-    background: #e5e5e5;
-    color:#fca311
+    background: #ffff;
+    color:#0E86D4
 }
 .todo-container{
     display: flex;
@@ -52,8 +52,8 @@ form button:hover{
 }
 .todo{
     margin:0.5rem;
-    background: #fca311;
-    color: #e5e5e5;
+    background: #0E86D4;
+    color: #ffff;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ form button:hover{
 
 .trash-button,.complete-button{
       background: #ef476f;
-      color: #e5e5e5;
+      color: #ffff;
       border: none;
       padding: 1rem;
       cursor: pointer;
@@ -73,3 +73,16 @@ form button:hover{
 }
 .complete-button{
     background: #06d6a0;
+}
+
+
+
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+

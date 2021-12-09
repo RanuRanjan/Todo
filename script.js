@@ -4,6 +4,7 @@ const todolist=document.querySelector('.todo-list');
 
 // event lisner
 todoButton.addEventListener('click',addTodo)
+todolist.addEventListener('click',deleteCheck)
 
 
 // function add todo
@@ -44,4 +45,27 @@ function addTodo(event){
 
     // clear input value
     todoInput.value=""
+}
+
+
+function deleteCheck(e){
+    // console.log(e.target);
+
+ 
+    // deleted todo
+    const item=e.target;
+    if(item.classList[0]==='trash-button'){
+        const todo=item.parentElement;
+        todo.remove()
+    }
+   
+    // 
+    if(item.classList[0]==='complete-button'){
+        const todo=item.parentElement;
+        todo.classList.toggle("completed")
+        
+    }
+
+
+
 }
